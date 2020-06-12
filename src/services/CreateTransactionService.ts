@@ -21,7 +21,7 @@ class CreateTransactionService {
 
     if (type === 'outcome' && value > balance.total) {
       throw Error(
-        'Insuficient balance. Outcome is greater than total balance.',
+        'Insuficient balance. Outcome is greater than current balance.',
       );
     }
 
